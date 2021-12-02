@@ -1,6 +1,8 @@
 import app from './App'
 import './dataBase'
 
-app.listen(4000, () => {
-    console.log("http://localhost:4000")
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, () => {
+    console.log(`puerto:${PORT}`)
 })
